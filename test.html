@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <title>Visiting the Corners</title>
+    </head>
+    <body>
+        <a-scene>
+        
+            <!-- Set the background -->
+            <a-sky color="lightblue"></a-sky>   
+    
+            <!-- Moving Cylinder -->
+            <a-box color="blue"
+                    animation="
+                    property: position;
+                    from: 3 2 -5;
+                    to: -3 2 -5;
+                    dur: 2000;
+                    loop: true;
+                    "
+            ></a-box>
+
+        </a-scene>
+    </body>
+</html>

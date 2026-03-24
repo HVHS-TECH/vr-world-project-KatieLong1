@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="lightblue"></a-sky>
+            
+        <!--
+        First animate the opacity from 0 to 1. It should take 10 seconds.
+        
+        Second animate the color from green to purple, (hint: green is #00ff00 and purple is #ff00ff )
+        
+        Third, create a new animation for position. It should start at 0 2 -3 and go to 0 6 -3
+        -->
+<a-sphere
+    position=" 0 2 -3"
+    animation="
+        property: ;
+        from: 0;
+        to: 1;
+        dur: ;
+        loop: true; 
+        "
+    animation__color="
+        property: color;
+        from: #00ff00;
+        to: ;
+        dur: 10000;
+        loop: true; 
+        "
+>
+</a-sphere>
+        </a-scene>
+    </body>
+</html>
